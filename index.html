@@ -28,8 +28,6 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [41.77, -72.69], // EDIT coordinates to re-center map
-    center: [41.60, -72.60], // EDIT coordinates to re-center map
-    center: [41.50, -72.50], // EDIT coordinates to re-center map
     zoom: 9,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
@@ -44,7 +42,15 @@
 
   /* Display a point marker with pop-up text */
   L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  .bindPopup("Trinity College"); // EDIT pop-up text message
+
+   L.marker([41.50, -72.50]).addTo(map) // EDIT marker coordinates
+  .bindPopup("1st Marker"); // EDIT pop-up text message
+
+   L.marker([41.60, -72.60]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Second Marker"); // EDIT pop-up text message
+
+
 
   </script>
 </body>
